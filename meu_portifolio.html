@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Kelvis Rios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="meu_portifolio_styles.css">
+    
+</head>
+<body>
+    <header>
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 70px;">
+            <h1>Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><button id="btn-tema">🌙 Escuro</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <img src="perfil.jpg" alt="Foto de Kelvis Rios" onerror="this.src='https://ui-avatars.com/api/?background=fa5c30&color=fff&bold=true&size=150&name=Kelvis+Rios';">
+            <p>Meu nome é Kelvis Rios, sou desenvolvedor em formação na área de Sistemas para Internet, com conhecimentos em HTML, CSS, JavaScript e SQL. <strong>Gosto de lógica de programação e computadores</strong>, e aprendo na prática criando soluções simples e úteis. Busco evoluir constantemente e desenvolver projetos que gerem valor real para as pessoas.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container"></div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post" id="meu-formulario">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>                
+                </div>
+                <div class="campo">
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" name="msg"></textarea>
+                </div>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Kelvis Rios</p>
+    </footer>
+    
+    <script src="meu_portifolio_script.js"></script>
+</body>
+</html>
